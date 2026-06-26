@@ -1,0 +1,21 @@
+{
+  "name": "rest-shop",
+  "version": "1.0.0",
+  "description": "Building a simple shop API that will stand as a simple structure with authentication",
+  "keywords": [
+    "node",
+    "express",
+    "restful",
+    "api"
+  ],
+  "license": "ISC",
+  "author": "Enaibre Emmanuel",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
