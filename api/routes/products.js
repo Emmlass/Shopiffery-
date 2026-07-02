@@ -17,16 +17,28 @@ router.get('/:productId', (req,res,next)=>{
    const id = req.params.productId;
    if(id === 'special'){
      res.status(200).json({
-        message: "You discovered what it means to be a special ID",
+        message: "You discovered what it means to have a special ID",
         id: id
-    })
-   }else{
+    })}else{
     res.status(200).json({
         message: "You passed an ID",
-        id: id
+    
     })
    }
 
 });
+
+router.patch('/:productId', (req,res,next)=>{
+    res.status(200).json({
+        message: "updated product"
+    });
+} );
+
+router.delete('/:productId', (req,res,next)=>{
+    res.status(200).json({
+        message: "deleted product"
+    });
+} );
+
 
 module.exports = router;
