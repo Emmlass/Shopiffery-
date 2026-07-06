@@ -1,12 +1,16 @@
 const express = require("express");
 const app = express();
 const morgan = require("morgan");
+const bodyParser = require("body-parser");
+
 // adding the product routes to make it easy to just parse "/" at the product.js file
 const productRoutes = require("./api/routes/products");
 const orderRoutes = require("./api/routes/orders");
 
 // using morgan in dev mode to log the requests made to the server
 app.use(morgan("dev"));
+app.use(bodyParser.json()); 
+
 
 
 // ROutes that handles requests
