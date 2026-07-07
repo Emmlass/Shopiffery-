@@ -1,6 +1,9 @@
 const express = require("express");
 const app = express();
+//logger middleware
 const morgan = require("morgan");
+
+//parser middleware
 const bodyParser = require("body-parser");
 
 // adding the product routes to make it easy to just parse "/" at the product.js file
