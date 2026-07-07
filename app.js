@@ -6,6 +6,10 @@ const morgan = require("morgan");
 //parser middleware
 const bodyParser = require("body-parser");
 
+// adding the mongodb database using mongoose
+const mongoose = require("mongoose");
+ 
+
 // adding the product routes to make it easy to just parse "/" at the product.js file
 const productRoutes = require("./api/routes/products");
 const orderRoutes = require("./api/routes/orders");
