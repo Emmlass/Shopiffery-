@@ -12,11 +12,15 @@ const mongoose = require("mongoose");
 
 // adding the product routes to make it easy to just parse "/" at the product.js file
 const productRoutes = require("./api/routes/products");
+
+// adding the order routes to make it easy to just parse "/" at the order.js file
 const orderRoutes = require("./api/routes/orders");
 
 // using morgan in dev mode to log the requests made to the server
 app.use(morgan("dev"));
 app.use(bodyParser.json()); 
+
+mongoose.connect("")
 
 // Add CORS error handling
  app.use((req,res,next)=>{
